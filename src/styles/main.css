@@ -108,6 +108,14 @@ nav a:hover {
   padding: 20px;
 }
 
+@media (max-width: 600px) {
+  .list-wrapper {
+    -ms-grid-columns: (minmax(145px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+    gap: 15px;
+  }
+}
+
 .list-wrapper > a:nth-child(1) {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
@@ -1396,6 +1404,12 @@ nav a:hover {
   border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+  .card-a img {
+    max-width: 100%;
+  }
+}
+
 .card-b {
   margin-top: 10px;
   text-align: center;
@@ -1422,7 +1436,7 @@ nav a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 620px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -2864,6 +2878,14 @@ nav a:hover {
 .pagination li.selected {
   background-color: red;
   color: #fff;
+}
+
+@media (max-width: 600px) {
+  .pagination {
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 14px;
+  }
 }
 
 /* Keyframes  */
