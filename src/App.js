@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink, Redirect, Route, Switch } from 'react-router-dom';
 import AllCountries from './components/AllCountries';
 import Country from './components/Country';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                     <Redirect to='/' />
                </Switch> 
             </main>
+            <Footer />
         </div>
     )
 }

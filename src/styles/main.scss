@@ -165,7 +165,7 @@ $shadow: #222b37;
   align-items: center;
   box-shadow: 0 25px 45px 0 rgba($shadow, 0.25);
   display: flex;
-  height: 340px;
+  // height: 340px;
   justify-content: center;
   position: relative;
   width: 60%;
@@ -246,7 +246,7 @@ $shadow: #222b37;
   img {
     display: block;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     position: absolute;
     z-index: -1;
     object-fit: cover;
@@ -385,6 +385,92 @@ $shadow: #222b37;
     padding: 20px 10px;
     font-size: 14px;
   }
+}
+
+/* Footer Styles below   */
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #222;
+  color: #fff;
+}
+
+footer .social-btns {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.social-btns .social-btn {
+  padding: 12px 14px;
+  background: #333;
+  margin: 2px;
+  text-align: center;
+  transition: ease-in-out 0.3s;
+}
+
+.social-btn a {
+  color: #fff;
+}
+
+.social-btn:first-child:hover {
+  background-color: #55acee;
+  transform: scale(1.1);
+}
+
+.social-btn:nth-child(2):hover {
+  background-color: #0077b5;
+  transform: scale(1.1);
+}
+
+.social-btn:nth-child(3):hover {
+  background-color: #2edb59;
+  transform: scale(1.1);
+}
+
+.social-btn:nth-child(4):hover {
+  background-color: #574b90;
+  transform: scale(1.1);
+}
+
+.social-btn:last-child:hover {
+  background-color: #4183c4;
+  transform: scale(1.1);
+}
+
+.to-top {
+  text-align: center;
+}
+
+.to-top img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.to-top #trick {
+  opacity: 0;
+  color: #fff;
+  transition: 0.5s ease;
+  font: 12px "Lato", sans-serif;
+  margin: 0 0 10px;
+}
+.rocket:hover #trick {
+  opacity: 1;
+}
+
+footer .copyright {
+  text-align: center;
+  margin: 0 0 0;
+  font: 14px "Lato", sans-serif;
+  color: #aaa;
+  font-weight: 300;
 }
 
 /* Keyframes  */
