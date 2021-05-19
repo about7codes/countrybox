@@ -67,6 +67,10 @@ const AllCountries = () => {
         }
 
         if(!_.isEmpty(allData.countries)){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
             const list = pagiData(allData.countries, page);
             return (
                 <div className="list-wrapper">

@@ -4,23 +4,19 @@ import _ from 'lodash';
 import { getCountries } from '../redux/actions/actions';
 
 const Country = (props) => {
-    console.log(props);
     const dispatch = useDispatch();
-    // dispatch(getCountries());
     const placeName = props.match.params.country;
-    // const placeData = useSelector(state => {
-    //     const data = state.countries.countries.filter(item => {
-    //         return placeName.toLowerCase() === item.name.toLowerCase();
-    //     });
-    //     return data;
-    // });
-
     const placeData = useSelector(state => state.countries);
-    console.log(placeData)
     useEffect(() => {
         if(_.isEmpty(placeData.countries)){
             dispatch(getCountries());
         }
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
     }, []);
     const showData = () => {
 
@@ -105,7 +101,6 @@ const Country = (props) => {
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="32" data-icon="map-marker" data-container-transform="translate(6)" viewBox="0 0 32 32" fill="#fff">
                                 <path d="M10 0c-5.523 0-10 4.477-10 10 0 7.5 10 22 10 22s10-14.5 10-22c0-5.523-4.477-10-10-10zm0 5c2.761 0 5 2.239 5 5s-2.239 5-5 5-5-2.239-5-5 2.239-5 5-5z" transform="translate(6)" />
                             </svg>
-                                
                                 Google it.
                             </a>
                         </div>
