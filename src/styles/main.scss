@@ -168,8 +168,14 @@ $shadow: #222b37;
   height: 340px;
   justify-content: center;
   position: relative;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  @media (max-width: 400px) {
+    width: 95%;
+  }
   &:before,
   &:after {
     border-radius: 5px;
@@ -288,7 +294,9 @@ $shadow: #222b37;
   margin-right: 20px;
   padding-bottom: 45px;
   padding-top: 45px;
-
+  @media (max-width: 530px) {
+    margin: 0;
+  }
   span {
     display: block;
     font-size: 14px;

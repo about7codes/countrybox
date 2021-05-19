@@ -1436,8 +1436,20 @@ nav a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .travelCard {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .travelCard {
+    width: 95%;
+  }
 }
 
 .travelCard:before, .travelCard:after {
@@ -2781,6 +2793,12 @@ nav a:hover {
   margin-right: 20px;
   padding-bottom: 45px;
   padding-top: 45px;
+}
+
+@media (max-width: 530px) {
+  .travelCard-info {
+    margin: 0;
+  }
 }
 
 .travelCard-info span {
