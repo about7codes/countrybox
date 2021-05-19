@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eef2f7;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff4b2b;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+  padding: 0 40px;
+  box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+nav a {
+  /* margin-right: 40px; */
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: red;
+}
+
+.main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-wrapper {
+  width: 100%;
+  margin: 20px 0;
+
+  height: 60px;
+  display: grid;
+  place-content: center;
+}
+
+.search input {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  background-color: white;
+  padding: 0 10px;
+  min-width: 310px;
+}
+.search button {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  background-color: white;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.search:focus-within {
+  box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+
+.list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 50px;
+  padding: 20px;
+}
+
+@for $i from 1 through 250 {
+  .list-wrapper > a:nth-child(#{$i}) {
+    animation-delay: $i * 0.1s;
+  }
+}
+
+.card {
+  opacity: 0;
+  animation: poof 0.5s forwards;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px 10px 10px;
+  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #fff;
+  &:hover {
+    box-shadow: 0px 0px 37px 1px rgba(0, 0, 0, 0.25);
+    // box-shadow: none;
+  }
+  &-a {
+    img {
+      margin: 0 auto;
+      display: block;
+      min-height: 80px;
+      max-width: 170px;
+      box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+  }
+  &-b {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+.loading {
+  text-align: center;
+  font-size: 24px;
+  animation: poof 0.5s;
+}
+
+// country page styles
+
+// Variables
+// ---------
+
+$shadow: #222b37;
+
+// Travel Card
+// -----------
+
+// for multiple locations
+@mixin travelCardLocation($background) {
+  background: url($background) no-repeat center center;
+  background-size: cover;
+}
+
+// Styles
+.travelCard {
+  align-items: center;
+  box-shadow: 0 25px 45px 0 rgba($shadow, 0.25);
+  display: flex;
+  height: 340px;
+  justify-content: center;
+  position: relative;
+  width: 620px;
+  margin: 0 auto;
+  &:before,
+  &:after {
+    border-radius: 5px;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:after {
+    background: linear-gradient(
+      45deg,
+      rgba($shadow, 0.3) 0%,
+      rgba($shadow, 0) 100%
+    );
+  }
+
+  // Locations
+  &.-london {
+    &:before {
+      @include travelCardLocation(
+        "https://s3-us-west-2.amazonaws.com/s.cdpn.io/174608/photo-1513635269975-59663e0ac1ad.jpeg"
+      );
+    }
+  }
+
+  // Skeleton layout
+  &.-skeleton {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(white 93px, transparent 0),
+      // title
+      linear-gradient(lightgrey 100%, transparent 0); // card bg
+    background-size: 259px 93px,
+      // title
+      100% 100%; // card bg
+    background-position: 50% 90px,
+      // title
+      100% 100%; // card bg
+    border-radius: 5px;
+
+    .travelCard-info {
+      background-repeat: no-repeat;
+      background-image: linear-gradient(lightgrey 20px, transparent 0),
+        // country
+        linear-gradient(lightgrey 20px, transparent 0),
+        // area
+        linear-gradient(lightgrey 20px, transparent 0); // population
+      background-size: 120px 20px;
+      background-position: 10% 70px,
+        // country
+        52% 70px,
+        // area
+        94% 70px; // population
+    }
+
+    .travelCard-button {
+      // opacity: 0;
+    }
+  }
+}
+
+.travelCard-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+}
+
+.travelCard-location {
+  margin-bottom: 75px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.travelCard-location-name {
+  background-color: rgba(black, 0.4);
+  border: 8px solid white;
+  color: white;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 18px 30px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba($shadow, 0.25);
+}
+
+@for $i from 1 through 250 {
+  .travelCard-container > .travelCard-info:nth-child(#{$i}) {
+    animation-delay: $i * 0.1s;
+  }
+}
+
+.travelCard-info {
+  opacity: 0;
+  animation: poof 0.5s forwards;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px 0 rgba($shadow, 0.2);
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 45px;
+  padding-top: 45px;
+
+  span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 19%;
+    text-align: left;
+
+    &:first-of-type {
+      color: #a0a0a0;
+      font-weight: 400;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.travelCard-info-details {
+  width: 100%;
+
+  &:not(:last-of-type) {
+    border-right: 1px solid #e0e0e0;
+  }
+}
+
+.travelCard-button {
+  display: flex;
+  transform: translateY(-25px);
+
+  .button {
+    align-items: center;
+    background-color: #ff4b2b;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 0 5px 15px 0 rgba($shadow, 0.15);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    margin: 0 auto;
+    padding: 20px 50px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 rgba($shadow, 0.15);
+    text-transform: uppercase;
+    transition: all 225ms ease-in-out;
+    width: auto;
+
+    &:hover {
+      background-color: darken(#ff4b2b, 20%);
+      box-shadow: 0 10px 15px 0 rgba($shadow, 0.15);
+    }
+
+    svg {
+      height: 22px;
+      margin-right: 10px;
+      width: 22px;
+    }
+  }
+}
+
+// pagiantion styles
+.pagination {
+  width: 500px;
+  display: flex;
+  margin: auto;
+  padding: 20px 0;
+  list-style: none;
+  justify-content: space-between;
+}
+.pagination li a {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+}
+.pagination li a:hover,
+.pagination li.selected {
+  background-color: red;
+  color: #fff;
+}
+
+/* Keyframes  */
+
+@keyframes poof {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

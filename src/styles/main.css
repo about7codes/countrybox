@@ -1,0 +1,2894 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eef2f7;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ff4b2b;
+  background: -webkit-gradient(linear, left top, right top, from(#ff416c), to(#ff4b2b));
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+  padding: 0 40px;
+  -webkit-box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+nav a {
+  /* margin-right: 40px; */
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: red;
+}
+
+.main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-wrapper {
+  width: 100%;
+  margin: 20px 0;
+  height: 60px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.search input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  background-color: white;
+  padding: 0 10px;
+  min-width: 310px;
+}
+
+.search button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  background-color: white;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.search:focus-within {
+  -webkit-box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+
+.list-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(245px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  gap: 50px;
+  padding: 20px;
+}
+
+.list-wrapper > a:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.list-wrapper > a:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.list-wrapper > a:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.list-wrapper > a:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.list-wrapper > a:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.list-wrapper > a:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.list-wrapper > a:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.list-wrapper > a:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.list-wrapper > a:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.list-wrapper > a:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.list-wrapper > a:nth-child(11) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+.list-wrapper > a:nth-child(12) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.list-wrapper > a:nth-child(13) {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.list-wrapper > a:nth-child(14) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.list-wrapper > a:nth-child(15) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.list-wrapper > a:nth-child(16) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.list-wrapper > a:nth-child(17) {
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+
+.list-wrapper > a:nth-child(18) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.list-wrapper > a:nth-child(19) {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+.list-wrapper > a:nth-child(20) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.list-wrapper > a:nth-child(21) {
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+.list-wrapper > a:nth-child(22) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.list-wrapper > a:nth-child(23) {
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}
+
+.list-wrapper > a:nth-child(24) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.list-wrapper > a:nth-child(25) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.list-wrapper > a:nth-child(26) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.list-wrapper > a:nth-child(27) {
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+}
+
+.list-wrapper > a:nth-child(28) {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.list-wrapper > a:nth-child(29) {
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
+}
+
+.list-wrapper > a:nth-child(30) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.list-wrapper > a:nth-child(31) {
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+.list-wrapper > a:nth-child(32) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.list-wrapper > a:nth-child(33) {
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+}
+
+.list-wrapper > a:nth-child(34) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+.list-wrapper > a:nth-child(35) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.list-wrapper > a:nth-child(36) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.list-wrapper > a:nth-child(37) {
+  -webkit-animation-delay: 3.7s;
+          animation-delay: 3.7s;
+}
+
+.list-wrapper > a:nth-child(38) {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+.list-wrapper > a:nth-child(39) {
+  -webkit-animation-delay: 3.9s;
+          animation-delay: 3.9s;
+}
+
+.list-wrapper > a:nth-child(40) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.list-wrapper > a:nth-child(41) {
+  -webkit-animation-delay: 4.1s;
+          animation-delay: 4.1s;
+}
+
+.list-wrapper > a:nth-child(42) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.list-wrapper > a:nth-child(43) {
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+}
+
+.list-wrapper > a:nth-child(44) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+.list-wrapper > a:nth-child(45) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.list-wrapper > a:nth-child(46) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+.list-wrapper > a:nth-child(47) {
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+}
+
+.list-wrapper > a:nth-child(48) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+.list-wrapper > a:nth-child(49) {
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+}
+
+.list-wrapper > a:nth-child(50) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.list-wrapper > a:nth-child(51) {
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+}
+
+.list-wrapper > a:nth-child(52) {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+}
+
+.list-wrapper > a:nth-child(53) {
+  -webkit-animation-delay: 5.3s;
+          animation-delay: 5.3s;
+}
+
+.list-wrapper > a:nth-child(54) {
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+}
+
+.list-wrapper > a:nth-child(55) {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+.list-wrapper > a:nth-child(56) {
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+}
+
+.list-wrapper > a:nth-child(57) {
+  -webkit-animation-delay: 5.7s;
+          animation-delay: 5.7s;
+}
+
+.list-wrapper > a:nth-child(58) {
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
+}
+
+.list-wrapper > a:nth-child(59) {
+  -webkit-animation-delay: 5.9s;
+          animation-delay: 5.9s;
+}
+
+.list-wrapper > a:nth-child(60) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.list-wrapper > a:nth-child(61) {
+  -webkit-animation-delay: 6.1s;
+          animation-delay: 6.1s;
+}
+
+.list-wrapper > a:nth-child(62) {
+  -webkit-animation-delay: 6.2s;
+          animation-delay: 6.2s;
+}
+
+.list-wrapper > a:nth-child(63) {
+  -webkit-animation-delay: 6.3s;
+          animation-delay: 6.3s;
+}
+
+.list-wrapper > a:nth-child(64) {
+  -webkit-animation-delay: 6.4s;
+          animation-delay: 6.4s;
+}
+
+.list-wrapper > a:nth-child(65) {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+
+.list-wrapper > a:nth-child(66) {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+}
+
+.list-wrapper > a:nth-child(67) {
+  -webkit-animation-delay: 6.7s;
+          animation-delay: 6.7s;
+}
+
+.list-wrapper > a:nth-child(68) {
+  -webkit-animation-delay: 6.8s;
+          animation-delay: 6.8s;
+}
+
+.list-wrapper > a:nth-child(69) {
+  -webkit-animation-delay: 6.9s;
+          animation-delay: 6.9s;
+}
+
+.list-wrapper > a:nth-child(70) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.list-wrapper > a:nth-child(71) {
+  -webkit-animation-delay: 7.1s;
+          animation-delay: 7.1s;
+}
+
+.list-wrapper > a:nth-child(72) {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+
+.list-wrapper > a:nth-child(73) {
+  -webkit-animation-delay: 7.3s;
+          animation-delay: 7.3s;
+}
+
+.list-wrapper > a:nth-child(74) {
+  -webkit-animation-delay: 7.4s;
+          animation-delay: 7.4s;
+}
+
+.list-wrapper > a:nth-child(75) {
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+
+.list-wrapper > a:nth-child(76) {
+  -webkit-animation-delay: 7.6s;
+          animation-delay: 7.6s;
+}
+
+.list-wrapper > a:nth-child(77) {
+  -webkit-animation-delay: 7.7s;
+          animation-delay: 7.7s;
+}
+
+.list-wrapper > a:nth-child(78) {
+  -webkit-animation-delay: 7.8s;
+          animation-delay: 7.8s;
+}
+
+.list-wrapper > a:nth-child(79) {
+  -webkit-animation-delay: 7.9s;
+          animation-delay: 7.9s;
+}
+
+.list-wrapper > a:nth-child(80) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.list-wrapper > a:nth-child(81) {
+  -webkit-animation-delay: 8.1s;
+          animation-delay: 8.1s;
+}
+
+.list-wrapper > a:nth-child(82) {
+  -webkit-animation-delay: 8.2s;
+          animation-delay: 8.2s;
+}
+
+.list-wrapper > a:nth-child(83) {
+  -webkit-animation-delay: 8.3s;
+          animation-delay: 8.3s;
+}
+
+.list-wrapper > a:nth-child(84) {
+  -webkit-animation-delay: 8.4s;
+          animation-delay: 8.4s;
+}
+
+.list-wrapper > a:nth-child(85) {
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+}
+
+.list-wrapper > a:nth-child(86) {
+  -webkit-animation-delay: 8.6s;
+          animation-delay: 8.6s;
+}
+
+.list-wrapper > a:nth-child(87) {
+  -webkit-animation-delay: 8.7s;
+          animation-delay: 8.7s;
+}
+
+.list-wrapper > a:nth-child(88) {
+  -webkit-animation-delay: 8.8s;
+          animation-delay: 8.8s;
+}
+
+.list-wrapper > a:nth-child(89) {
+  -webkit-animation-delay: 8.9s;
+          animation-delay: 8.9s;
+}
+
+.list-wrapper > a:nth-child(90) {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.list-wrapper > a:nth-child(91) {
+  -webkit-animation-delay: 9.1s;
+          animation-delay: 9.1s;
+}
+
+.list-wrapper > a:nth-child(92) {
+  -webkit-animation-delay: 9.2s;
+          animation-delay: 9.2s;
+}
+
+.list-wrapper > a:nth-child(93) {
+  -webkit-animation-delay: 9.3s;
+          animation-delay: 9.3s;
+}
+
+.list-wrapper > a:nth-child(94) {
+  -webkit-animation-delay: 9.4s;
+          animation-delay: 9.4s;
+}
+
+.list-wrapper > a:nth-child(95) {
+  -webkit-animation-delay: 9.5s;
+          animation-delay: 9.5s;
+}
+
+.list-wrapper > a:nth-child(96) {
+  -webkit-animation-delay: 9.6s;
+          animation-delay: 9.6s;
+}
+
+.list-wrapper > a:nth-child(97) {
+  -webkit-animation-delay: 9.7s;
+          animation-delay: 9.7s;
+}
+
+.list-wrapper > a:nth-child(98) {
+  -webkit-animation-delay: 9.8s;
+          animation-delay: 9.8s;
+}
+
+.list-wrapper > a:nth-child(99) {
+  -webkit-animation-delay: 9.9s;
+          animation-delay: 9.9s;
+}
+
+.list-wrapper > a:nth-child(100) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.list-wrapper > a:nth-child(101) {
+  -webkit-animation-delay: 10.1s;
+          animation-delay: 10.1s;
+}
+
+.list-wrapper > a:nth-child(102) {
+  -webkit-animation-delay: 10.2s;
+          animation-delay: 10.2s;
+}
+
+.list-wrapper > a:nth-child(103) {
+  -webkit-animation-delay: 10.3s;
+          animation-delay: 10.3s;
+}
+
+.list-wrapper > a:nth-child(104) {
+  -webkit-animation-delay: 10.4s;
+          animation-delay: 10.4s;
+}
+
+.list-wrapper > a:nth-child(105) {
+  -webkit-animation-delay: 10.5s;
+          animation-delay: 10.5s;
+}
+
+.list-wrapper > a:nth-child(106) {
+  -webkit-animation-delay: 10.6s;
+          animation-delay: 10.6s;
+}
+
+.list-wrapper > a:nth-child(107) {
+  -webkit-animation-delay: 10.7s;
+          animation-delay: 10.7s;
+}
+
+.list-wrapper > a:nth-child(108) {
+  -webkit-animation-delay: 10.8s;
+          animation-delay: 10.8s;
+}
+
+.list-wrapper > a:nth-child(109) {
+  -webkit-animation-delay: 10.9s;
+          animation-delay: 10.9s;
+}
+
+.list-wrapper > a:nth-child(110) {
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.list-wrapper > a:nth-child(111) {
+  -webkit-animation-delay: 11.1s;
+          animation-delay: 11.1s;
+}
+
+.list-wrapper > a:nth-child(112) {
+  -webkit-animation-delay: 11.2s;
+          animation-delay: 11.2s;
+}
+
+.list-wrapper > a:nth-child(113) {
+  -webkit-animation-delay: 11.3s;
+          animation-delay: 11.3s;
+}
+
+.list-wrapper > a:nth-child(114) {
+  -webkit-animation-delay: 11.4s;
+          animation-delay: 11.4s;
+}
+
+.list-wrapper > a:nth-child(115) {
+  -webkit-animation-delay: 11.5s;
+          animation-delay: 11.5s;
+}
+
+.list-wrapper > a:nth-child(116) {
+  -webkit-animation-delay: 11.6s;
+          animation-delay: 11.6s;
+}
+
+.list-wrapper > a:nth-child(117) {
+  -webkit-animation-delay: 11.7s;
+          animation-delay: 11.7s;
+}
+
+.list-wrapper > a:nth-child(118) {
+  -webkit-animation-delay: 11.8s;
+          animation-delay: 11.8s;
+}
+
+.list-wrapper > a:nth-child(119) {
+  -webkit-animation-delay: 11.9s;
+          animation-delay: 11.9s;
+}
+
+.list-wrapper > a:nth-child(120) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.list-wrapper > a:nth-child(121) {
+  -webkit-animation-delay: 12.1s;
+          animation-delay: 12.1s;
+}
+
+.list-wrapper > a:nth-child(122) {
+  -webkit-animation-delay: 12.2s;
+          animation-delay: 12.2s;
+}
+
+.list-wrapper > a:nth-child(123) {
+  -webkit-animation-delay: 12.3s;
+          animation-delay: 12.3s;
+}
+
+.list-wrapper > a:nth-child(124) {
+  -webkit-animation-delay: 12.4s;
+          animation-delay: 12.4s;
+}
+
+.list-wrapper > a:nth-child(125) {
+  -webkit-animation-delay: 12.5s;
+          animation-delay: 12.5s;
+}
+
+.list-wrapper > a:nth-child(126) {
+  -webkit-animation-delay: 12.6s;
+          animation-delay: 12.6s;
+}
+
+.list-wrapper > a:nth-child(127) {
+  -webkit-animation-delay: 12.7s;
+          animation-delay: 12.7s;
+}
+
+.list-wrapper > a:nth-child(128) {
+  -webkit-animation-delay: 12.8s;
+          animation-delay: 12.8s;
+}
+
+.list-wrapper > a:nth-child(129) {
+  -webkit-animation-delay: 12.9s;
+          animation-delay: 12.9s;
+}
+
+.list-wrapper > a:nth-child(130) {
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+
+.list-wrapper > a:nth-child(131) {
+  -webkit-animation-delay: 13.1s;
+          animation-delay: 13.1s;
+}
+
+.list-wrapper > a:nth-child(132) {
+  -webkit-animation-delay: 13.2s;
+          animation-delay: 13.2s;
+}
+
+.list-wrapper > a:nth-child(133) {
+  -webkit-animation-delay: 13.3s;
+          animation-delay: 13.3s;
+}
+
+.list-wrapper > a:nth-child(134) {
+  -webkit-animation-delay: 13.4s;
+          animation-delay: 13.4s;
+}
+
+.list-wrapper > a:nth-child(135) {
+  -webkit-animation-delay: 13.5s;
+          animation-delay: 13.5s;
+}
+
+.list-wrapper > a:nth-child(136) {
+  -webkit-animation-delay: 13.6s;
+          animation-delay: 13.6s;
+}
+
+.list-wrapper > a:nth-child(137) {
+  -webkit-animation-delay: 13.7s;
+          animation-delay: 13.7s;
+}
+
+.list-wrapper > a:nth-child(138) {
+  -webkit-animation-delay: 13.8s;
+          animation-delay: 13.8s;
+}
+
+.list-wrapper > a:nth-child(139) {
+  -webkit-animation-delay: 13.9s;
+          animation-delay: 13.9s;
+}
+
+.list-wrapper > a:nth-child(140) {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.list-wrapper > a:nth-child(141) {
+  -webkit-animation-delay: 14.1s;
+          animation-delay: 14.1s;
+}
+
+.list-wrapper > a:nth-child(142) {
+  -webkit-animation-delay: 14.2s;
+          animation-delay: 14.2s;
+}
+
+.list-wrapper > a:nth-child(143) {
+  -webkit-animation-delay: 14.3s;
+          animation-delay: 14.3s;
+}
+
+.list-wrapper > a:nth-child(144) {
+  -webkit-animation-delay: 14.4s;
+          animation-delay: 14.4s;
+}
+
+.list-wrapper > a:nth-child(145) {
+  -webkit-animation-delay: 14.5s;
+          animation-delay: 14.5s;
+}
+
+.list-wrapper > a:nth-child(146) {
+  -webkit-animation-delay: 14.6s;
+          animation-delay: 14.6s;
+}
+
+.list-wrapper > a:nth-child(147) {
+  -webkit-animation-delay: 14.7s;
+          animation-delay: 14.7s;
+}
+
+.list-wrapper > a:nth-child(148) {
+  -webkit-animation-delay: 14.8s;
+          animation-delay: 14.8s;
+}
+
+.list-wrapper > a:nth-child(149) {
+  -webkit-animation-delay: 14.9s;
+          animation-delay: 14.9s;
+}
+
+.list-wrapper > a:nth-child(150) {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.list-wrapper > a:nth-child(151) {
+  -webkit-animation-delay: 15.1s;
+          animation-delay: 15.1s;
+}
+
+.list-wrapper > a:nth-child(152) {
+  -webkit-animation-delay: 15.2s;
+          animation-delay: 15.2s;
+}
+
+.list-wrapper > a:nth-child(153) {
+  -webkit-animation-delay: 15.3s;
+          animation-delay: 15.3s;
+}
+
+.list-wrapper > a:nth-child(154) {
+  -webkit-animation-delay: 15.4s;
+          animation-delay: 15.4s;
+}
+
+.list-wrapper > a:nth-child(155) {
+  -webkit-animation-delay: 15.5s;
+          animation-delay: 15.5s;
+}
+
+.list-wrapper > a:nth-child(156) {
+  -webkit-animation-delay: 15.6s;
+          animation-delay: 15.6s;
+}
+
+.list-wrapper > a:nth-child(157) {
+  -webkit-animation-delay: 15.7s;
+          animation-delay: 15.7s;
+}
+
+.list-wrapper > a:nth-child(158) {
+  -webkit-animation-delay: 15.8s;
+          animation-delay: 15.8s;
+}
+
+.list-wrapper > a:nth-child(159) {
+  -webkit-animation-delay: 15.9s;
+          animation-delay: 15.9s;
+}
+
+.list-wrapper > a:nth-child(160) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.list-wrapper > a:nth-child(161) {
+  -webkit-animation-delay: 16.1s;
+          animation-delay: 16.1s;
+}
+
+.list-wrapper > a:nth-child(162) {
+  -webkit-animation-delay: 16.2s;
+          animation-delay: 16.2s;
+}
+
+.list-wrapper > a:nth-child(163) {
+  -webkit-animation-delay: 16.3s;
+          animation-delay: 16.3s;
+}
+
+.list-wrapper > a:nth-child(164) {
+  -webkit-animation-delay: 16.4s;
+          animation-delay: 16.4s;
+}
+
+.list-wrapper > a:nth-child(165) {
+  -webkit-animation-delay: 16.5s;
+          animation-delay: 16.5s;
+}
+
+.list-wrapper > a:nth-child(166) {
+  -webkit-animation-delay: 16.6s;
+          animation-delay: 16.6s;
+}
+
+.list-wrapper > a:nth-child(167) {
+  -webkit-animation-delay: 16.7s;
+          animation-delay: 16.7s;
+}
+
+.list-wrapper > a:nth-child(168) {
+  -webkit-animation-delay: 16.8s;
+          animation-delay: 16.8s;
+}
+
+.list-wrapper > a:nth-child(169) {
+  -webkit-animation-delay: 16.9s;
+          animation-delay: 16.9s;
+}
+
+.list-wrapper > a:nth-child(170) {
+  -webkit-animation-delay: 17s;
+          animation-delay: 17s;
+}
+
+.list-wrapper > a:nth-child(171) {
+  -webkit-animation-delay: 17.1s;
+          animation-delay: 17.1s;
+}
+
+.list-wrapper > a:nth-child(172) {
+  -webkit-animation-delay: 17.2s;
+          animation-delay: 17.2s;
+}
+
+.list-wrapper > a:nth-child(173) {
+  -webkit-animation-delay: 17.3s;
+          animation-delay: 17.3s;
+}
+
+.list-wrapper > a:nth-child(174) {
+  -webkit-animation-delay: 17.4s;
+          animation-delay: 17.4s;
+}
+
+.list-wrapper > a:nth-child(175) {
+  -webkit-animation-delay: 17.5s;
+          animation-delay: 17.5s;
+}
+
+.list-wrapper > a:nth-child(176) {
+  -webkit-animation-delay: 17.6s;
+          animation-delay: 17.6s;
+}
+
+.list-wrapper > a:nth-child(177) {
+  -webkit-animation-delay: 17.7s;
+          animation-delay: 17.7s;
+}
+
+.list-wrapper > a:nth-child(178) {
+  -webkit-animation-delay: 17.8s;
+          animation-delay: 17.8s;
+}
+
+.list-wrapper > a:nth-child(179) {
+  -webkit-animation-delay: 17.9s;
+          animation-delay: 17.9s;
+}
+
+.list-wrapper > a:nth-child(180) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.list-wrapper > a:nth-child(181) {
+  -webkit-animation-delay: 18.1s;
+          animation-delay: 18.1s;
+}
+
+.list-wrapper > a:nth-child(182) {
+  -webkit-animation-delay: 18.2s;
+          animation-delay: 18.2s;
+}
+
+.list-wrapper > a:nth-child(183) {
+  -webkit-animation-delay: 18.3s;
+          animation-delay: 18.3s;
+}
+
+.list-wrapper > a:nth-child(184) {
+  -webkit-animation-delay: 18.4s;
+          animation-delay: 18.4s;
+}
+
+.list-wrapper > a:nth-child(185) {
+  -webkit-animation-delay: 18.5s;
+          animation-delay: 18.5s;
+}
+
+.list-wrapper > a:nth-child(186) {
+  -webkit-animation-delay: 18.6s;
+          animation-delay: 18.6s;
+}
+
+.list-wrapper > a:nth-child(187) {
+  -webkit-animation-delay: 18.7s;
+          animation-delay: 18.7s;
+}
+
+.list-wrapper > a:nth-child(188) {
+  -webkit-animation-delay: 18.8s;
+          animation-delay: 18.8s;
+}
+
+.list-wrapper > a:nth-child(189) {
+  -webkit-animation-delay: 18.9s;
+          animation-delay: 18.9s;
+}
+
+.list-wrapper > a:nth-child(190) {
+  -webkit-animation-delay: 19s;
+          animation-delay: 19s;
+}
+
+.list-wrapper > a:nth-child(191) {
+  -webkit-animation-delay: 19.1s;
+          animation-delay: 19.1s;
+}
+
+.list-wrapper > a:nth-child(192) {
+  -webkit-animation-delay: 19.2s;
+          animation-delay: 19.2s;
+}
+
+.list-wrapper > a:nth-child(193) {
+  -webkit-animation-delay: 19.3s;
+          animation-delay: 19.3s;
+}
+
+.list-wrapper > a:nth-child(194) {
+  -webkit-animation-delay: 19.4s;
+          animation-delay: 19.4s;
+}
+
+.list-wrapper > a:nth-child(195) {
+  -webkit-animation-delay: 19.5s;
+          animation-delay: 19.5s;
+}
+
+.list-wrapper > a:nth-child(196) {
+  -webkit-animation-delay: 19.6s;
+          animation-delay: 19.6s;
+}
+
+.list-wrapper > a:nth-child(197) {
+  -webkit-animation-delay: 19.7s;
+          animation-delay: 19.7s;
+}
+
+.list-wrapper > a:nth-child(198) {
+  -webkit-animation-delay: 19.8s;
+          animation-delay: 19.8s;
+}
+
+.list-wrapper > a:nth-child(199) {
+  -webkit-animation-delay: 19.9s;
+          animation-delay: 19.9s;
+}
+
+.list-wrapper > a:nth-child(200) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.list-wrapper > a:nth-child(201) {
+  -webkit-animation-delay: 20.1s;
+          animation-delay: 20.1s;
+}
+
+.list-wrapper > a:nth-child(202) {
+  -webkit-animation-delay: 20.2s;
+          animation-delay: 20.2s;
+}
+
+.list-wrapper > a:nth-child(203) {
+  -webkit-animation-delay: 20.3s;
+          animation-delay: 20.3s;
+}
+
+.list-wrapper > a:nth-child(204) {
+  -webkit-animation-delay: 20.4s;
+          animation-delay: 20.4s;
+}
+
+.list-wrapper > a:nth-child(205) {
+  -webkit-animation-delay: 20.5s;
+          animation-delay: 20.5s;
+}
+
+.list-wrapper > a:nth-child(206) {
+  -webkit-animation-delay: 20.6s;
+          animation-delay: 20.6s;
+}
+
+.list-wrapper > a:nth-child(207) {
+  -webkit-animation-delay: 20.7s;
+          animation-delay: 20.7s;
+}
+
+.list-wrapper > a:nth-child(208) {
+  -webkit-animation-delay: 20.8s;
+          animation-delay: 20.8s;
+}
+
+.list-wrapper > a:nth-child(209) {
+  -webkit-animation-delay: 20.9s;
+          animation-delay: 20.9s;
+}
+
+.list-wrapper > a:nth-child(210) {
+  -webkit-animation-delay: 21s;
+          animation-delay: 21s;
+}
+
+.list-wrapper > a:nth-child(211) {
+  -webkit-animation-delay: 21.1s;
+          animation-delay: 21.1s;
+}
+
+.list-wrapper > a:nth-child(212) {
+  -webkit-animation-delay: 21.2s;
+          animation-delay: 21.2s;
+}
+
+.list-wrapper > a:nth-child(213) {
+  -webkit-animation-delay: 21.3s;
+          animation-delay: 21.3s;
+}
+
+.list-wrapper > a:nth-child(214) {
+  -webkit-animation-delay: 21.4s;
+          animation-delay: 21.4s;
+}
+
+.list-wrapper > a:nth-child(215) {
+  -webkit-animation-delay: 21.5s;
+          animation-delay: 21.5s;
+}
+
+.list-wrapper > a:nth-child(216) {
+  -webkit-animation-delay: 21.6s;
+          animation-delay: 21.6s;
+}
+
+.list-wrapper > a:nth-child(217) {
+  -webkit-animation-delay: 21.7s;
+          animation-delay: 21.7s;
+}
+
+.list-wrapper > a:nth-child(218) {
+  -webkit-animation-delay: 21.8s;
+          animation-delay: 21.8s;
+}
+
+.list-wrapper > a:nth-child(219) {
+  -webkit-animation-delay: 21.9s;
+          animation-delay: 21.9s;
+}
+
+.list-wrapper > a:nth-child(220) {
+  -webkit-animation-delay: 22s;
+          animation-delay: 22s;
+}
+
+.list-wrapper > a:nth-child(221) {
+  -webkit-animation-delay: 22.1s;
+          animation-delay: 22.1s;
+}
+
+.list-wrapper > a:nth-child(222) {
+  -webkit-animation-delay: 22.2s;
+          animation-delay: 22.2s;
+}
+
+.list-wrapper > a:nth-child(223) {
+  -webkit-animation-delay: 22.3s;
+          animation-delay: 22.3s;
+}
+
+.list-wrapper > a:nth-child(224) {
+  -webkit-animation-delay: 22.4s;
+          animation-delay: 22.4s;
+}
+
+.list-wrapper > a:nth-child(225) {
+  -webkit-animation-delay: 22.5s;
+          animation-delay: 22.5s;
+}
+
+.list-wrapper > a:nth-child(226) {
+  -webkit-animation-delay: 22.6s;
+          animation-delay: 22.6s;
+}
+
+.list-wrapper > a:nth-child(227) {
+  -webkit-animation-delay: 22.7s;
+          animation-delay: 22.7s;
+}
+
+.list-wrapper > a:nth-child(228) {
+  -webkit-animation-delay: 22.8s;
+          animation-delay: 22.8s;
+}
+
+.list-wrapper > a:nth-child(229) {
+  -webkit-animation-delay: 22.9s;
+          animation-delay: 22.9s;
+}
+
+.list-wrapper > a:nth-child(230) {
+  -webkit-animation-delay: 23s;
+          animation-delay: 23s;
+}
+
+.list-wrapper > a:nth-child(231) {
+  -webkit-animation-delay: 23.1s;
+          animation-delay: 23.1s;
+}
+
+.list-wrapper > a:nth-child(232) {
+  -webkit-animation-delay: 23.2s;
+          animation-delay: 23.2s;
+}
+
+.list-wrapper > a:nth-child(233) {
+  -webkit-animation-delay: 23.3s;
+          animation-delay: 23.3s;
+}
+
+.list-wrapper > a:nth-child(234) {
+  -webkit-animation-delay: 23.4s;
+          animation-delay: 23.4s;
+}
+
+.list-wrapper > a:nth-child(235) {
+  -webkit-animation-delay: 23.5s;
+          animation-delay: 23.5s;
+}
+
+.list-wrapper > a:nth-child(236) {
+  -webkit-animation-delay: 23.6s;
+          animation-delay: 23.6s;
+}
+
+.list-wrapper > a:nth-child(237) {
+  -webkit-animation-delay: 23.7s;
+          animation-delay: 23.7s;
+}
+
+.list-wrapper > a:nth-child(238) {
+  -webkit-animation-delay: 23.8s;
+          animation-delay: 23.8s;
+}
+
+.list-wrapper > a:nth-child(239) {
+  -webkit-animation-delay: 23.9s;
+          animation-delay: 23.9s;
+}
+
+.list-wrapper > a:nth-child(240) {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.list-wrapper > a:nth-child(241) {
+  -webkit-animation-delay: 24.1s;
+          animation-delay: 24.1s;
+}
+
+.list-wrapper > a:nth-child(242) {
+  -webkit-animation-delay: 24.2s;
+          animation-delay: 24.2s;
+}
+
+.list-wrapper > a:nth-child(243) {
+  -webkit-animation-delay: 24.3s;
+          animation-delay: 24.3s;
+}
+
+.list-wrapper > a:nth-child(244) {
+  -webkit-animation-delay: 24.4s;
+          animation-delay: 24.4s;
+}
+
+.list-wrapper > a:nth-child(245) {
+  -webkit-animation-delay: 24.5s;
+          animation-delay: 24.5s;
+}
+
+.list-wrapper > a:nth-child(246) {
+  -webkit-animation-delay: 24.6s;
+          animation-delay: 24.6s;
+}
+
+.list-wrapper > a:nth-child(247) {
+  -webkit-animation-delay: 24.7s;
+          animation-delay: 24.7s;
+}
+
+.list-wrapper > a:nth-child(248) {
+  -webkit-animation-delay: 24.8s;
+          animation-delay: 24.8s;
+}
+
+.list-wrapper > a:nth-child(249) {
+  -webkit-animation-delay: 24.9s;
+          animation-delay: 24.9s;
+}
+
+.list-wrapper > a:nth-child(250) {
+  -webkit-animation-delay: 25s;
+          animation-delay: 25s;
+}
+
+.card {
+  opacity: 0;
+  -webkit-animation: poof 0.5s forwards;
+          animation: poof 0.5s forwards;
+  color: #333;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 10px 10px 10px;
+  -webkit-box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 37px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 37px 1px rgba(0, 0, 0, 0.25);
+}
+
+.card-a img {
+  margin: 0 auto;
+  display: block;
+  min-height: 80px;
+  max-width: 170px;
+  -webkit-box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.card-b {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  font-size: 24px;
+  -webkit-animation: poof 0.5s;
+          animation: poof 0.5s;
+}
+
+.travelCard {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 25px 45px 0 rgba(34, 43, 55, 0.25);
+          box-shadow: 0 25px 45px 0 rgba(34, 43, 55, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 340px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 620px;
+  margin: 0 auto;
+}
+
+.travelCard:before, .travelCard:after {
+  border-radius: 5px;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.travelCard:after {
+  background: linear-gradient(45deg, rgba(34, 43, 55, 0.3) 0%, rgba(34, 43, 55, 0) 100%);
+}
+
+.travelCard.-london:before {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/174608/photo-1513635269975-59663e0ac1ad.jpeg") no-repeat center center;
+  background-size: cover;
+}
+
+.travelCard.-skeleton {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(white 93px, transparent 0), linear-gradient(lightgrey 100%, transparent 0);
+  background-size: 259px 93px, 100% 100%;
+  background-position: 50% 90px, 100% 100%;
+  border-radius: 5px;
+}
+
+.travelCard.-skeleton .travelCard-info {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(lightgrey 20px, transparent 0), linear-gradient(lightgrey 20px, transparent 0), linear-gradient(lightgrey 20px, transparent 0);
+  background-size: 120px 20px;
+  background-position: 10% 70px, 52% 70px, 94% 70px;
+}
+
+.travelCard-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.travelCard-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+}
+
+.travelCard-location {
+  margin-bottom: 75px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.travelCard-location-name {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 8px solid white;
+  color: white;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 18px 30px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(34, 43, 55, 0.25);
+}
+
+.travelCard-container > .travelCard-info:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(11) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(12) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(13) {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(14) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(15) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(16) {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(17) {
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(18) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(19) {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(20) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(21) {
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(22) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(23) {
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(24) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(25) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(26) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(27) {
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(28) {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(29) {
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(30) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(31) {
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(32) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(33) {
+  -webkit-animation-delay: 3.3s;
+          animation-delay: 3.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(34) {
+  -webkit-animation-delay: 3.4s;
+          animation-delay: 3.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(35) {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(36) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(37) {
+  -webkit-animation-delay: 3.7s;
+          animation-delay: 3.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(38) {
+  -webkit-animation-delay: 3.8s;
+          animation-delay: 3.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(39) {
+  -webkit-animation-delay: 3.9s;
+          animation-delay: 3.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(40) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(41) {
+  -webkit-animation-delay: 4.1s;
+          animation-delay: 4.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(42) {
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(43) {
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(44) {
+  -webkit-animation-delay: 4.4s;
+          animation-delay: 4.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(45) {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(46) {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(47) {
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(48) {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(49) {
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(50) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(51) {
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(52) {
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(53) {
+  -webkit-animation-delay: 5.3s;
+          animation-delay: 5.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(54) {
+  -webkit-animation-delay: 5.4s;
+          animation-delay: 5.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(55) {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(56) {
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(57) {
+  -webkit-animation-delay: 5.7s;
+          animation-delay: 5.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(58) {
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(59) {
+  -webkit-animation-delay: 5.9s;
+          animation-delay: 5.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(60) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(61) {
+  -webkit-animation-delay: 6.1s;
+          animation-delay: 6.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(62) {
+  -webkit-animation-delay: 6.2s;
+          animation-delay: 6.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(63) {
+  -webkit-animation-delay: 6.3s;
+          animation-delay: 6.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(64) {
+  -webkit-animation-delay: 6.4s;
+          animation-delay: 6.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(65) {
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(66) {
+  -webkit-animation-delay: 6.6s;
+          animation-delay: 6.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(67) {
+  -webkit-animation-delay: 6.7s;
+          animation-delay: 6.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(68) {
+  -webkit-animation-delay: 6.8s;
+          animation-delay: 6.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(69) {
+  -webkit-animation-delay: 6.9s;
+          animation-delay: 6.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(70) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(71) {
+  -webkit-animation-delay: 7.1s;
+          animation-delay: 7.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(72) {
+  -webkit-animation-delay: 7.2s;
+          animation-delay: 7.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(73) {
+  -webkit-animation-delay: 7.3s;
+          animation-delay: 7.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(74) {
+  -webkit-animation-delay: 7.4s;
+          animation-delay: 7.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(75) {
+  -webkit-animation-delay: 7.5s;
+          animation-delay: 7.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(76) {
+  -webkit-animation-delay: 7.6s;
+          animation-delay: 7.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(77) {
+  -webkit-animation-delay: 7.7s;
+          animation-delay: 7.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(78) {
+  -webkit-animation-delay: 7.8s;
+          animation-delay: 7.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(79) {
+  -webkit-animation-delay: 7.9s;
+          animation-delay: 7.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(80) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(81) {
+  -webkit-animation-delay: 8.1s;
+          animation-delay: 8.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(82) {
+  -webkit-animation-delay: 8.2s;
+          animation-delay: 8.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(83) {
+  -webkit-animation-delay: 8.3s;
+          animation-delay: 8.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(84) {
+  -webkit-animation-delay: 8.4s;
+          animation-delay: 8.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(85) {
+  -webkit-animation-delay: 8.5s;
+          animation-delay: 8.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(86) {
+  -webkit-animation-delay: 8.6s;
+          animation-delay: 8.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(87) {
+  -webkit-animation-delay: 8.7s;
+          animation-delay: 8.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(88) {
+  -webkit-animation-delay: 8.8s;
+          animation-delay: 8.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(89) {
+  -webkit-animation-delay: 8.9s;
+          animation-delay: 8.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(90) {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(91) {
+  -webkit-animation-delay: 9.1s;
+          animation-delay: 9.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(92) {
+  -webkit-animation-delay: 9.2s;
+          animation-delay: 9.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(93) {
+  -webkit-animation-delay: 9.3s;
+          animation-delay: 9.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(94) {
+  -webkit-animation-delay: 9.4s;
+          animation-delay: 9.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(95) {
+  -webkit-animation-delay: 9.5s;
+          animation-delay: 9.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(96) {
+  -webkit-animation-delay: 9.6s;
+          animation-delay: 9.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(97) {
+  -webkit-animation-delay: 9.7s;
+          animation-delay: 9.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(98) {
+  -webkit-animation-delay: 9.8s;
+          animation-delay: 9.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(99) {
+  -webkit-animation-delay: 9.9s;
+          animation-delay: 9.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(100) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(101) {
+  -webkit-animation-delay: 10.1s;
+          animation-delay: 10.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(102) {
+  -webkit-animation-delay: 10.2s;
+          animation-delay: 10.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(103) {
+  -webkit-animation-delay: 10.3s;
+          animation-delay: 10.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(104) {
+  -webkit-animation-delay: 10.4s;
+          animation-delay: 10.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(105) {
+  -webkit-animation-delay: 10.5s;
+          animation-delay: 10.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(106) {
+  -webkit-animation-delay: 10.6s;
+          animation-delay: 10.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(107) {
+  -webkit-animation-delay: 10.7s;
+          animation-delay: 10.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(108) {
+  -webkit-animation-delay: 10.8s;
+          animation-delay: 10.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(109) {
+  -webkit-animation-delay: 10.9s;
+          animation-delay: 10.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(110) {
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(111) {
+  -webkit-animation-delay: 11.1s;
+          animation-delay: 11.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(112) {
+  -webkit-animation-delay: 11.2s;
+          animation-delay: 11.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(113) {
+  -webkit-animation-delay: 11.3s;
+          animation-delay: 11.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(114) {
+  -webkit-animation-delay: 11.4s;
+          animation-delay: 11.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(115) {
+  -webkit-animation-delay: 11.5s;
+          animation-delay: 11.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(116) {
+  -webkit-animation-delay: 11.6s;
+          animation-delay: 11.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(117) {
+  -webkit-animation-delay: 11.7s;
+          animation-delay: 11.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(118) {
+  -webkit-animation-delay: 11.8s;
+          animation-delay: 11.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(119) {
+  -webkit-animation-delay: 11.9s;
+          animation-delay: 11.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(120) {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(121) {
+  -webkit-animation-delay: 12.1s;
+          animation-delay: 12.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(122) {
+  -webkit-animation-delay: 12.2s;
+          animation-delay: 12.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(123) {
+  -webkit-animation-delay: 12.3s;
+          animation-delay: 12.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(124) {
+  -webkit-animation-delay: 12.4s;
+          animation-delay: 12.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(125) {
+  -webkit-animation-delay: 12.5s;
+          animation-delay: 12.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(126) {
+  -webkit-animation-delay: 12.6s;
+          animation-delay: 12.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(127) {
+  -webkit-animation-delay: 12.7s;
+          animation-delay: 12.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(128) {
+  -webkit-animation-delay: 12.8s;
+          animation-delay: 12.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(129) {
+  -webkit-animation-delay: 12.9s;
+          animation-delay: 12.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(130) {
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(131) {
+  -webkit-animation-delay: 13.1s;
+          animation-delay: 13.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(132) {
+  -webkit-animation-delay: 13.2s;
+          animation-delay: 13.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(133) {
+  -webkit-animation-delay: 13.3s;
+          animation-delay: 13.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(134) {
+  -webkit-animation-delay: 13.4s;
+          animation-delay: 13.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(135) {
+  -webkit-animation-delay: 13.5s;
+          animation-delay: 13.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(136) {
+  -webkit-animation-delay: 13.6s;
+          animation-delay: 13.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(137) {
+  -webkit-animation-delay: 13.7s;
+          animation-delay: 13.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(138) {
+  -webkit-animation-delay: 13.8s;
+          animation-delay: 13.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(139) {
+  -webkit-animation-delay: 13.9s;
+          animation-delay: 13.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(140) {
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(141) {
+  -webkit-animation-delay: 14.1s;
+          animation-delay: 14.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(142) {
+  -webkit-animation-delay: 14.2s;
+          animation-delay: 14.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(143) {
+  -webkit-animation-delay: 14.3s;
+          animation-delay: 14.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(144) {
+  -webkit-animation-delay: 14.4s;
+          animation-delay: 14.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(145) {
+  -webkit-animation-delay: 14.5s;
+          animation-delay: 14.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(146) {
+  -webkit-animation-delay: 14.6s;
+          animation-delay: 14.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(147) {
+  -webkit-animation-delay: 14.7s;
+          animation-delay: 14.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(148) {
+  -webkit-animation-delay: 14.8s;
+          animation-delay: 14.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(149) {
+  -webkit-animation-delay: 14.9s;
+          animation-delay: 14.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(150) {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(151) {
+  -webkit-animation-delay: 15.1s;
+          animation-delay: 15.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(152) {
+  -webkit-animation-delay: 15.2s;
+          animation-delay: 15.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(153) {
+  -webkit-animation-delay: 15.3s;
+          animation-delay: 15.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(154) {
+  -webkit-animation-delay: 15.4s;
+          animation-delay: 15.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(155) {
+  -webkit-animation-delay: 15.5s;
+          animation-delay: 15.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(156) {
+  -webkit-animation-delay: 15.6s;
+          animation-delay: 15.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(157) {
+  -webkit-animation-delay: 15.7s;
+          animation-delay: 15.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(158) {
+  -webkit-animation-delay: 15.8s;
+          animation-delay: 15.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(159) {
+  -webkit-animation-delay: 15.9s;
+          animation-delay: 15.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(160) {
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(161) {
+  -webkit-animation-delay: 16.1s;
+          animation-delay: 16.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(162) {
+  -webkit-animation-delay: 16.2s;
+          animation-delay: 16.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(163) {
+  -webkit-animation-delay: 16.3s;
+          animation-delay: 16.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(164) {
+  -webkit-animation-delay: 16.4s;
+          animation-delay: 16.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(165) {
+  -webkit-animation-delay: 16.5s;
+          animation-delay: 16.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(166) {
+  -webkit-animation-delay: 16.6s;
+          animation-delay: 16.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(167) {
+  -webkit-animation-delay: 16.7s;
+          animation-delay: 16.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(168) {
+  -webkit-animation-delay: 16.8s;
+          animation-delay: 16.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(169) {
+  -webkit-animation-delay: 16.9s;
+          animation-delay: 16.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(170) {
+  -webkit-animation-delay: 17s;
+          animation-delay: 17s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(171) {
+  -webkit-animation-delay: 17.1s;
+          animation-delay: 17.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(172) {
+  -webkit-animation-delay: 17.2s;
+          animation-delay: 17.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(173) {
+  -webkit-animation-delay: 17.3s;
+          animation-delay: 17.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(174) {
+  -webkit-animation-delay: 17.4s;
+          animation-delay: 17.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(175) {
+  -webkit-animation-delay: 17.5s;
+          animation-delay: 17.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(176) {
+  -webkit-animation-delay: 17.6s;
+          animation-delay: 17.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(177) {
+  -webkit-animation-delay: 17.7s;
+          animation-delay: 17.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(178) {
+  -webkit-animation-delay: 17.8s;
+          animation-delay: 17.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(179) {
+  -webkit-animation-delay: 17.9s;
+          animation-delay: 17.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(180) {
+  -webkit-animation-delay: 18s;
+          animation-delay: 18s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(181) {
+  -webkit-animation-delay: 18.1s;
+          animation-delay: 18.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(182) {
+  -webkit-animation-delay: 18.2s;
+          animation-delay: 18.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(183) {
+  -webkit-animation-delay: 18.3s;
+          animation-delay: 18.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(184) {
+  -webkit-animation-delay: 18.4s;
+          animation-delay: 18.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(185) {
+  -webkit-animation-delay: 18.5s;
+          animation-delay: 18.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(186) {
+  -webkit-animation-delay: 18.6s;
+          animation-delay: 18.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(187) {
+  -webkit-animation-delay: 18.7s;
+          animation-delay: 18.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(188) {
+  -webkit-animation-delay: 18.8s;
+          animation-delay: 18.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(189) {
+  -webkit-animation-delay: 18.9s;
+          animation-delay: 18.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(190) {
+  -webkit-animation-delay: 19s;
+          animation-delay: 19s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(191) {
+  -webkit-animation-delay: 19.1s;
+          animation-delay: 19.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(192) {
+  -webkit-animation-delay: 19.2s;
+          animation-delay: 19.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(193) {
+  -webkit-animation-delay: 19.3s;
+          animation-delay: 19.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(194) {
+  -webkit-animation-delay: 19.4s;
+          animation-delay: 19.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(195) {
+  -webkit-animation-delay: 19.5s;
+          animation-delay: 19.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(196) {
+  -webkit-animation-delay: 19.6s;
+          animation-delay: 19.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(197) {
+  -webkit-animation-delay: 19.7s;
+          animation-delay: 19.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(198) {
+  -webkit-animation-delay: 19.8s;
+          animation-delay: 19.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(199) {
+  -webkit-animation-delay: 19.9s;
+          animation-delay: 19.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(200) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(201) {
+  -webkit-animation-delay: 20.1s;
+          animation-delay: 20.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(202) {
+  -webkit-animation-delay: 20.2s;
+          animation-delay: 20.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(203) {
+  -webkit-animation-delay: 20.3s;
+          animation-delay: 20.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(204) {
+  -webkit-animation-delay: 20.4s;
+          animation-delay: 20.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(205) {
+  -webkit-animation-delay: 20.5s;
+          animation-delay: 20.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(206) {
+  -webkit-animation-delay: 20.6s;
+          animation-delay: 20.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(207) {
+  -webkit-animation-delay: 20.7s;
+          animation-delay: 20.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(208) {
+  -webkit-animation-delay: 20.8s;
+          animation-delay: 20.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(209) {
+  -webkit-animation-delay: 20.9s;
+          animation-delay: 20.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(210) {
+  -webkit-animation-delay: 21s;
+          animation-delay: 21s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(211) {
+  -webkit-animation-delay: 21.1s;
+          animation-delay: 21.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(212) {
+  -webkit-animation-delay: 21.2s;
+          animation-delay: 21.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(213) {
+  -webkit-animation-delay: 21.3s;
+          animation-delay: 21.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(214) {
+  -webkit-animation-delay: 21.4s;
+          animation-delay: 21.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(215) {
+  -webkit-animation-delay: 21.5s;
+          animation-delay: 21.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(216) {
+  -webkit-animation-delay: 21.6s;
+          animation-delay: 21.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(217) {
+  -webkit-animation-delay: 21.7s;
+          animation-delay: 21.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(218) {
+  -webkit-animation-delay: 21.8s;
+          animation-delay: 21.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(219) {
+  -webkit-animation-delay: 21.9s;
+          animation-delay: 21.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(220) {
+  -webkit-animation-delay: 22s;
+          animation-delay: 22s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(221) {
+  -webkit-animation-delay: 22.1s;
+          animation-delay: 22.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(222) {
+  -webkit-animation-delay: 22.2s;
+          animation-delay: 22.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(223) {
+  -webkit-animation-delay: 22.3s;
+          animation-delay: 22.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(224) {
+  -webkit-animation-delay: 22.4s;
+          animation-delay: 22.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(225) {
+  -webkit-animation-delay: 22.5s;
+          animation-delay: 22.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(226) {
+  -webkit-animation-delay: 22.6s;
+          animation-delay: 22.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(227) {
+  -webkit-animation-delay: 22.7s;
+          animation-delay: 22.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(228) {
+  -webkit-animation-delay: 22.8s;
+          animation-delay: 22.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(229) {
+  -webkit-animation-delay: 22.9s;
+          animation-delay: 22.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(230) {
+  -webkit-animation-delay: 23s;
+          animation-delay: 23s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(231) {
+  -webkit-animation-delay: 23.1s;
+          animation-delay: 23.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(232) {
+  -webkit-animation-delay: 23.2s;
+          animation-delay: 23.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(233) {
+  -webkit-animation-delay: 23.3s;
+          animation-delay: 23.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(234) {
+  -webkit-animation-delay: 23.4s;
+          animation-delay: 23.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(235) {
+  -webkit-animation-delay: 23.5s;
+          animation-delay: 23.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(236) {
+  -webkit-animation-delay: 23.6s;
+          animation-delay: 23.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(237) {
+  -webkit-animation-delay: 23.7s;
+          animation-delay: 23.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(238) {
+  -webkit-animation-delay: 23.8s;
+          animation-delay: 23.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(239) {
+  -webkit-animation-delay: 23.9s;
+          animation-delay: 23.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(240) {
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(241) {
+  -webkit-animation-delay: 24.1s;
+          animation-delay: 24.1s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(242) {
+  -webkit-animation-delay: 24.2s;
+          animation-delay: 24.2s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(243) {
+  -webkit-animation-delay: 24.3s;
+          animation-delay: 24.3s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(244) {
+  -webkit-animation-delay: 24.4s;
+          animation-delay: 24.4s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(245) {
+  -webkit-animation-delay: 24.5s;
+          animation-delay: 24.5s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(246) {
+  -webkit-animation-delay: 24.6s;
+          animation-delay: 24.6s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(247) {
+  -webkit-animation-delay: 24.7s;
+          animation-delay: 24.7s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(248) {
+  -webkit-animation-delay: 24.8s;
+          animation-delay: 24.8s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(249) {
+  -webkit-animation-delay: 24.9s;
+          animation-delay: 24.9s;
+}
+
+.travelCard-container > .travelCard-info:nth-child(250) {
+  -webkit-animation-delay: 25s;
+          animation-delay: 25s;
+}
+
+.travelCard-info {
+  opacity: 0;
+  -webkit-animation: poof 0.5s forwards;
+          animation: poof 0.5s forwards;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 25px 0 rgba(34, 43, 55, 0.2);
+          box-shadow: 0 5px 25px 0 rgba(34, 43, 55, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 45px;
+  padding-top: 45px;
+}
+
+.travelCard-info span {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 19%;
+  text-align: left;
+}
+
+.travelCard-info span:first-of-type {
+  color: #a0a0a0;
+  font-weight: 400;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.travelCard-info-details {
+  width: 100%;
+}
+
+.travelCard-info-details:not(:last-of-type) {
+  border-right: 1px solid #e0e0e0;
+}
+
+.travelCard-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+.travelCard-button .button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff4b2b;
+  border: none;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(34, 43, 55, 0.15);
+          box-shadow: 0 5px 15px 0 rgba(34, 43, 55, 0.15);
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(34, 43, 55, 0.15);
+  text-transform: uppercase;
+  -webkit-transition: all 225ms ease-in-out;
+  transition: all 225ms ease-in-out;
+  width: auto;
+}
+
+.travelCard-button .button:hover {
+  background-color: #c41e00;
+  -webkit-box-shadow: 0 10px 15px 0 rgba(34, 43, 55, 0.15);
+          box-shadow: 0 10px 15px 0 rgba(34, 43, 55, 0.15);
+}
+
+.travelCard-button .button svg {
+  height: 22px;
+  margin-right: 10px;
+  width: 22px;
+}
+
+.pagination {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 20px 0;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pagination li a {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+}
+
+.pagination li a:hover,
+.pagination li.selected {
+  background-color: red;
+  color: #fff;
+}
+
+/* Keyframes  */
+@-webkit-keyframes poof {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes poof {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+/*# sourceMappingURL=main.css.map */

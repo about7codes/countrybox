@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { NavLink, Redirect, Route, Switch } from 'react-router-dom';
+import AllCountries from './components/AllCountries';
+import Country from './components/Country';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div className="app">
+            <nav>
+                <h1>Country Box</h1>
+                <NavLink to='/'>Home</NavLink>
+            </nav>
+            <main className="main">
+               <Switch>
+                    <Route path='/' exact component={AllCountries} />
+                    <Route path='/countries/:country' exact component={Country} />
+                    <Redirect to='/' />
+               </Switch> 
+            </main>
+        </div>
+    )
 }
 
 export default App;
