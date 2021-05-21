@@ -111,8 +111,8 @@ const AllCountries = () => {
         <div className="main-wrapper">
             <div className="search-wrapper">
                 <div className="search">
-                    <input type='text' placeholder='Find country...' onChange={(e) => setSearch(e.target.value)} />
-                    <button><i className="fas fa-search"></i></button>
+                    <input type='text' value={search} placeholder='Find country...' onChange={(e) => setSearch(e.target.value)} />
+                    <button onClick={() => setSearch('')}><i className="fas fa-times-circle"></i></button>
                 </div>
             </div>
             {renderJSX}
