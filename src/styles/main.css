@@ -13,6 +13,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -1443,6 +1451,9 @@ nav a:hover {
   .travelCard {
     width: 90%;
   }
+  .travelCard .travelCard-location-name {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1459,10 +1470,6 @@ nav a:hover {
   position: absolute;
   width: 100%;
   z-index: -1;
-}
-
-.travelCard:after {
-  background: linear-gradient(45deg, rgba(34, 43, 55, 0.3) 0%, rgba(34, 43, 55, 0) 100%);
 }
 
 .travelCard.-london:before {

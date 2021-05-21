@@ -14,6 +14,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -172,6 +178,9 @@ $shadow: #222b37;
   margin: 0 auto;
   @media (max-width: 768px) {
     width: 90%;
+    .travelCard-location-name {
+      font-size: 34px;
+    }
   }
   @media (max-width: 400px) {
     width: 95%;
@@ -188,11 +197,11 @@ $shadow: #222b37;
   }
 
   &:after {
-    background: linear-gradient(
-      45deg,
-      rgba($shadow, 0.3) 0%,
-      rgba($shadow, 0) 100%
-    );
+    // background: linear-gradient(
+    //   45deg,
+    //   rgba($shadow, 0.3) 0%,
+    //   rgba($shadow, 0) 100%
+    // );
   }
 
   // Locations
