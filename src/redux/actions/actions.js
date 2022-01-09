@@ -8,8 +8,7 @@ export const getCountries = () => async (dispatch) => {
             type: GET_COUNTRIES_LOADING,
         });
 
-        const res = await axios.get('https://restcountries.eu/rest/v2/all');
-
+        const res = await axios.get('https://restcountries.com/v2/all');
 
         dispatch({
             type: GET_COUNTRIES_SUCCESS,
